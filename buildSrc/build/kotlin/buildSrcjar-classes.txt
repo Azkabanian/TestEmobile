@@ -1,0 +1,1 @@
+D:\AndroidStudioProjects\TestEmobile\buildSrc\build\classes\kotlin\main\AppConfig.class;D:\AndroidStudioProjects\TestEmobile\buildSrc\build\classes\kotlin\main\Deps.class;D:\AndroidStudioProjects\TestEmobile\buildSrc\build\classes\kotlin\main\Versions.class

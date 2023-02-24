@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "TestEmobile"
-include ':app'
+include (":app")
