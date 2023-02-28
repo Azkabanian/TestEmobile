@@ -1,6 +1,8 @@
 plugins {
     id ("com.android.application")
     id ("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -46,4 +48,12 @@ dependencies {
     testImplementation (Deps.JUNIT)
     androidTestImplementation (Deps.EXTJUNIT)
     androidTestImplementation (Deps.ESPRESSO)
+
+    // Dagger - Hilt
+    implementation(Deps.DAGGER_HILT)
+    kapt(Deps.DAGGER_HILT_COMPILER)
+}
+
+kapt {
+    correctErrorTypes = true
 }
