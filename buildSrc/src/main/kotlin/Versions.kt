@@ -6,4 +6,6 @@ object Versions {
     const val junitVersion = "4.13.2"
     const val extJunitVersion = "1.1.5"
     const val espressoVersion = "3.5.1"
+    const val RETROFIT = "2.9.0"
+    const val DAGGER_HILT = "2.44"
 }
