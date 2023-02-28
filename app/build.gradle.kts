@@ -38,12 +38,12 @@ android {
 }
 
 dependencies {
-    implementation (Deps.core)
-    implementation (Deps.appcompat)
-    implementation (Deps.material)
-    implementation (Deps.constraintlayout)
-    implementation(Deps.constraintlayout)
-    testImplementation (Deps.junit)
-    androidTestImplementation (Deps.extJunit)
-    androidTestImplementation (Deps.espresso)
+    implementation (Deps.CORE)
+    implementation (Deps.APPCOMPAT)
+    implementation (Deps.MATERIAL)
+    implementation (Deps.CONSTRAINTLAYOUT)
+    implementation(Deps.CONSTRAINTLAYOUT)
+    testImplementation (Deps.JUNIT)
+    androidTestImplementation (Deps.EXTJUNIT)
+    androidTestImplementation (Deps.ESPRESSO)
 }

@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "TestEmobile"
 include (":app")
 include(":domain")
+include(":network")
