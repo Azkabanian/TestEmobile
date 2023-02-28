@@ -16,3 +16,5 @@ rootProject.name = "TestEmobile"
 include (":app")
 include(":domain")
 include(":network")
+include(":data")
+include(":common")
