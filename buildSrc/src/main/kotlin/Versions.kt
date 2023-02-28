@@ -8,4 +8,5 @@ object Versions {
     const val espressoVersion = "3.5.1"
     const val RETROFIT = "2.9.0"
     const val DAGGER_HILT = "2.44"
+    const val MOSHI = "1.14.0"
 }

@@ -39,6 +39,8 @@ dependencies {
 
     // Retrofit
     implementation(Deps.RETROFIT)
+    implementation (Deps.MOSHI)
+    implementation (Deps.MOSHI_CONVERTER)
 
     // Dagger - Hilt
     implementation(Deps.DAGGER_HILT)
