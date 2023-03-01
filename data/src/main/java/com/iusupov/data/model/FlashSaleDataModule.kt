@@ -1,5 +1,9 @@
 package com.iusupov.data.model
 
 data class FlashSaleDataModule(
-    val flash_sale: List<FlashSale>
+    val category: String,
+    val discount: Int,
+    val image_url: String,
+    val name: String,
+    val price: Double
 )

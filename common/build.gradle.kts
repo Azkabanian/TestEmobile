@@ -1,6 +1,8 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -35,4 +37,12 @@ android {
 
 dependencies {
 
+    // Retrofit
+    implementation(Deps.RETROFIT)
+    implementation (Deps.MOSHI)
+    implementation (Deps.MOSHI_CONVERTER)
+
+    // Dagger - Hilt
+    implementation(Deps.DAGGER_HILT)
+    kapt(Deps.DAGGER_HILT_COMPILER)
 }
