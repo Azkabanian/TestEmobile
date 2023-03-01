@@ -1,10 +1,10 @@
 package com.iusupov.data.source
 
 import com.iusupov.common.utils.wrapper.DataResult
-import com.iusupov.data.model.FlashSaleDataModule
-import com.iusupov.data.model.LatestDataModule
+import com.iusupov.data.model.FlashSaleResponseDataModule
+import com.iusupov.data.model.LatestResponseDataModule
 
 interface ProductNetworkDataSource {
-    suspend fun getLatestProduct(): DataResult<LatestDataModule>
-    suspend fun getFlashSale(): DataResult<FlashSaleDataModule>
+    suspend fun getLatestProduct(): DataResult<LatestResponseDataModule>
+    suspend fun getFlashSale(): DataResult<FlashSaleResponseDataModule>
 }

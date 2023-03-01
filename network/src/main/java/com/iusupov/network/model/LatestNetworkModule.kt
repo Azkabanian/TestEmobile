@@ -1,5 +1,8 @@
 package com.iusupov.network.model
 
 data class LatestNetworkModule(
-    val latest: List<Latest>
+    val category: String,
+    val image_url: String,
+    val name: String,
+    val price: Int
 )

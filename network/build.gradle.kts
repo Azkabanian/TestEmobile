@@ -37,6 +37,9 @@ android {
 
 dependencies {
 
+    implementation(project(":data"))
+    implementation(project(":common"))
+
     // Retrofit
     implementation(Deps.RETROFIT)
     implementation (Deps.MOSHI)
