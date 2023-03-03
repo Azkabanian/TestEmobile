@@ -38,6 +38,7 @@ android {
 dependencies {
 
     implementation(project(":common"))
+    implementation(project(":domain"))
 
     // Dagger - Hilt
     implementation(Deps.DAGGER_HILT)

@@ -6,7 +6,7 @@ import com.iusupov.common.utils.wrapper.DataResult
 import com.iusupov.data.connectivity.ConnectivityChecker
 import com.iusupov.data.model.FlashSaleResponseDataModule
 import com.iusupov.data.model.LatestResponseDataModule
-import com.iusupov.data.source.ProductNetworkDataSource
+import com.iusupov.data.source.network.ProductNetworkDataSource
 import com.iusupov.network.apiservice.ProductApiService
 import com.iusupov.network.mapper.FlashSaleNetworkDataMapper
 import com.iusupov.network.mapper.LatestNetworkDataMapper

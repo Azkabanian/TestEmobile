@@ -1,4 +1,4 @@
-package com.iusupov.data.source
+package com.iusupov.data.source.network
 
 import com.iusupov.common.utils.wrapper.DataResult
 import com.iusupov.data.model.FlashSaleResponseDataModule
