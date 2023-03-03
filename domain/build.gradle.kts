@@ -41,4 +41,6 @@ dependencies {
     testImplementation(Deps.JUNIT)
     androidTestImplementation(Deps.EXTJUNIT)
     androidTestImplementation(Deps.ESPRESSO)
+
+    implementation(project(":common"))
 }
