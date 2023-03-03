@@ -35,12 +35,8 @@ android {
 
 dependencies {
 
-    implementation(Deps.CORE)
-    implementation(Deps.APPCOMPAT)
-    implementation(Deps.MATERIAL)
-    testImplementation(Deps.JUNIT)
-    androidTestImplementation(Deps.EXTJUNIT)
-    androidTestImplementation(Deps.ESPRESSO)
-
     implementation(project(":common"))
+
+    // DI
+    implementation (Deps.INJECT)
 }
