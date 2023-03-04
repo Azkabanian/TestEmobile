@@ -12,4 +12,6 @@ object Deps {
     const val MOSHI = "com.squareup.moshi:moshi-kotlin:${Versions.MOSHI}"
     const val MOSHI_CONVERTER = "com.squareup.retrofit2:converter-moshi:${Versions.RETROFIT}"
     const val INJECT = "javax.inject:javax.inject:${Versions.INJECT}"
+    const val VIEWMODELSCOPE = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.LIFECYCLE}"
+
 }

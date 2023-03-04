@@ -10,4 +10,5 @@ object Versions {
     const val DAGGER_HILT = "2.44"
     const val MOSHI = "1.14.0"
     const val INJECT = "1"
+    const val LIFECYCLE = "2.5.1"
 }
