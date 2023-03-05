@@ -5,11 +5,11 @@ plugins {
 
 android {
     namespace = "com.iusupov.domain"
-    compileSdk = AppConfig.compileSdk
+    compileSdk = AppConfig.COMPILE_SDK
 
     defaultConfig {
-        minSdk = AppConfig.minSdk
-        targetSdk = AppConfig.targetSdk
+        minSdk = AppConfig.MIN_SDK
+        targetSdk = AppConfig.TARGET_SDK
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -39,4 +39,8 @@ dependencies {
 
     // DI
     implementation (Deps.INJECT)
+
+    // Coroutines
+    implementation (Deps.COROUTINES_CORE)
+    implementation (Deps.COROUTINES_ANDROID)
 }

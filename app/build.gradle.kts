@@ -7,14 +7,14 @@ plugins {
 
 android {
     namespace = "com.iusupov.testemobile"
-    compileSdk = AppConfig.compileSdk
+    compileSdk = AppConfig.COMPILE_SDK
 
     defaultConfig {
         applicationId = "com.iusupov.testemobile"
-        minSdk = AppConfig.minSdk
-        targetSdk = AppConfig.targetSdk
-        versionCode = AppConfig.versionCode
-        versionName = AppConfig.versionName
+        minSdk = AppConfig.MIN_SDK
+        targetSdk = AppConfig.TARGET_SDK
+        versionCode = AppConfig.VERSION_CODE
+        versionName = AppConfig.VERSION_NAME
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -43,8 +43,8 @@ dependencies {
     implementation (Deps.CORE)
     implementation (Deps.APPCOMPAT)
     implementation (Deps.MATERIAL)
-    implementation (Deps.CONSTRAINTLAYOUT)
-    implementation(Deps.CONSTRAINTLAYOUT)
+    implementation (Deps.CONSTRAINT_LAYOUT)
+    implementation(Deps.CONSTRAINT_LAYOUT)
     testImplementation (Deps.JUNIT)
     androidTestImplementation (Deps.EXT_JUNIT)
     androidTestImplementation (Deps.ESPRESSO)
