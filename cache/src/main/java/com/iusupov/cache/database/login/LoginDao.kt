@@ -1,18 +1,18 @@
 package com.iusupov.cache.database.login
 
-import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.iusupov.cache.model.LoginTableModel
+import com.iusupov.cache.model.LoginTableCacheModel
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface LoginDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertData(loginTableModel: LoginTableModel)
+    fun insertData(loginTableCacheModel: LoginTableCacheModel)
 
     @Query("SELECT * FROM Login WHERE Username =:username")
-    fun getLoginDetails(username: String?): LiveData<LoginTableModel>
+    fun getLoginDetails(username: String?): Flow<LoginTableCacheModel>
 }

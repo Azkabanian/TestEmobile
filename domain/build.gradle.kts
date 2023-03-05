@@ -39,4 +39,8 @@ dependencies {
 
     // DI
     implementation (Deps.INJECT)
+
+    // Coroutines
+    implementation (Deps.COROUTINES_CORE)
+    implementation (Deps.COROUTINES_ANDROID)
 }

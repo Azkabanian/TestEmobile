@@ -15,4 +15,5 @@ object Versions {
     const val GLIDE = "4.13.0"
     const val LIFECYCLE_VIEW_MODEL = "2.5.1"
     const val ROOM = "2.5.0"
+    const val COROUTINES = "1.6.1"
 }

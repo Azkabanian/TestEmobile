@@ -20,6 +20,8 @@ object Deps {
     const val LIFECYCLE_VIEW_MODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.LIFECYCLE_VIEW_MODEL}"
     const val ROOM = "androidx.room:room-runtime:${Versions.ROOM}"
     const val ROOM_KTX = "androidx.room:room-ktx:${Versions.ROOM}"
+    const val COROUTINES_ANDROID = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.COROUTINES}"
+    const val COROUTINES_CORE = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.COROUTINES}"
 
 
 }
