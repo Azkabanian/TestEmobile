@@ -46,12 +46,29 @@ dependencies {
     implementation (Deps.CONSTRAINTLAYOUT)
     implementation(Deps.CONSTRAINTLAYOUT)
     testImplementation (Deps.JUNIT)
-    androidTestImplementation (Deps.EXTJUNIT)
+    androidTestImplementation (Deps.EXT_JUNIT)
     androidTestImplementation (Deps.ESPRESSO)
+
+    implementation (project(":common"))
+    implementation (project(":data"))
+    implementation (project(":domain"))
+    implementation (project(":network"))
+    implementation (project(":presentation"))
 
     // Dagger - Hilt
     implementation(Deps.DAGGER_HILT)
     kapt(Deps.DAGGER_HILT_COMPILER)
+
+    // Navigation Component
+    implementation(Deps.NAVIGATION_FRAGMENT)
+    implementation(Deps.NAVIGATION_UI)
+
+    // Glide
+    implementation (Deps.GLIDE)
+    kapt (Deps.GLIDE_COMPILER)
+
+//    // Architectural Components
+//    implementation (Deps.LIFECYCLE_VIEW_MODEL)
 }
 
 kapt {

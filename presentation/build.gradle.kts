@@ -45,7 +45,7 @@ dependencies {
     kapt(Deps.DAGGER_HILT_COMPILER)
 
     // Lifecycles
-    implementation (Deps.VIEWMODELSCOPE)
+    implementation (Deps.VIEW_MODEL_SCOPE)
 }
 
 kapt {

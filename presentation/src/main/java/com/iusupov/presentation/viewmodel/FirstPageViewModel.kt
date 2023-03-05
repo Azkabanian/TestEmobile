@@ -9,9 +9,12 @@ import com.iusupov.domain.model.FlashSaleResponseDomainModule
 import com.iusupov.domain.model.LatestResponseDomainModule
 import com.iusupov.domain.usecase.flashsale.FlashSaleUseCase
 import com.iusupov.domain.usecase.latestproduct.LatestProductUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class FirstPageViewModel(
+@HiltViewModel
+class FirstPageViewModel @Inject constructor(
     private val latestProductUseCase: LatestProductUseCase,
     private val flashSaleUseCase: FlashSaleUseCase
 ) : ViewModel() {
@@ -23,6 +26,10 @@ class FirstPageViewModel(
     private val _flashSale = MutableLiveData<DataResult<FlashSaleResponseDomainModule>>()
     val flashSale: LiveData<DataResult<FlashSaleResponseDomainModule>>
         get() = _flashSale
+
+    init {
+        fetchLatestProduct()
+    }
 
     fun fetchLatestProduct(): LiveData<DataResult<LatestResponseDomainModule>> {
         viewModelScope.launch {
